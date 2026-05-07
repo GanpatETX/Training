@@ -16,21 +16,21 @@ public class CommentService {
     @Autowired
     private userRepo userRepository;
 
-    public Comment createComment(int userId, String content) {
-        // 1. Check if user already has a comment
-        if (commentRepository.existsById(userId)) {
-            throw new RuntimeException("You can only create one comment!");
-        }
+    public Comment saveComment(String email, String content) {
 
-        // 2. Fetch the user
-        User user = userRepository.findById(userId)
+        com.AuthForm.Entites.User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
-        // 3. Create and link comment
-        Comment comment = new Comment();
-        comment.setComment(content);
-        comment.setUser(user);
 
+        if (commentRepository.existsById(user.getId())) {
+            throw new RuntimeException("Error: You can only post one comment!");
+        }
+
+
+        Comment comment = new Comment();
+        comment.setContent(content);
+        comment.setUser(user);
         return commentRepository.save(comment);
     }
+
 }

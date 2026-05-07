@@ -6,23 +6,15 @@ import jakarta.persistence.*;
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int
+            id;
 
-    private String Comment;
+    private String content;
 
     @OneToOne
     @MapsId
     @JoinColumn(name = "user_id")
     private User user;
-
-    public Comment(int id, String comment, User user) {
-        this.id = id;
-        Comment = comment;
-        this.user = user;
-    }
-
-    public Comment() {
-    }
 
     public int getId() {
         return id;
@@ -32,12 +24,12 @@ public class Comment {
         this.id = id;
     }
 
-    public String getComment() {
-        return Comment;
+    public String getContent() {
+        return content;
     }
 
-    public void setComment(String comment) {
-        Comment = comment;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public User getUser() {
@@ -52,7 +44,7 @@ public class Comment {
     public String toString() {
         return "Comment{" +
                 "id=" + id +
-                ", Comment='" + Comment + '\'' +
+                ", content='" + content + '\'' +
                 ", user=" + user +
                 '}';
     }
