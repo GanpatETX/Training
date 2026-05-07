@@ -17,8 +17,10 @@ public class CommentController {
 
     @PostMapping
     public ResponseEntity<?> addComment(@RequestBody String content, Authentication auth) {
+        System.out.println("Auth Object: " + auth);
         try {
             // Get email from session automatically
+
             Comment saved = commentService.saveComment(auth.getName(), content);
             return ResponseEntity.ok(saved);
         } catch (RuntimeException e) {
