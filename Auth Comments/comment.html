@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Comment System</title>
     <style>
-        .comment-box { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 5px; }
-        #comment-list { margin-top: 20px; }
+        .comment-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        #comment-list {
+            margin-top: 20px;
+        }
     </style>
 </head>
+
 <body>
 
     <h2>Leave a Comment</h2>
@@ -14,6 +24,8 @@
     <form id="comment-form">
         <textarea id="comment-input" placeholder="Write a comment..." required cols="40" rows="4"></textarea><br>
         <button type="submit">Post Comment</button>
+        
+
     </form>
 
     <h3>All Comments</h3>
@@ -22,7 +34,8 @@
 
     <button id="uuid-btn">Generate UUID</button>
     <p>ID: <span id="uuid-display">None</span></p>
-    <script src="uuid.js"></script>
-    <script src="index.js" defer></script>
+    <script src="uuid.js" defer></script>
+    <!-- <script src="index.js" defer></script> -->
 </body>
+
 </html>
