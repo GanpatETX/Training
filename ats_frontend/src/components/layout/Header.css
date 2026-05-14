@@ -1,0 +1,130 @@
+/* src/components/layout/Header.css */
+.header {
+  border-bottom: 1px solid var(--border);
+  background: rgba(var(--card), 0.6);
+  backdrop-filter: blur(12px);
+  padding: 0.75rem 1.25rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+}
+.header__title {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--foreground);
+  white-space: nowrap;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Search */
+.header__search-wrap {
+  position: relative;
+}
+.header__search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted-foreground);
+  pointer-events: none;
+}
+.header__search {
+  padding: 0.45rem 0.75rem 0.45rem 2rem;
+  font-size: 13px;
+  background: var(--input-background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  width: 260px;
+  outline: none;
+  transition: var(--transition);
+}
+.header__search:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(128,128,128,0.12);
+}
+
+/* Icon buttons */
+.header__icon-btn {
+  width: 34px; height: 34px;
+  border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted-foreground);
+  transition: var(--transition);
+}
+
+.header__icon-btn:hover {
+  background: var(--muted);
+  color: var(--foreground);
+}
+.header__icon-btn--active,
+.header__icon-btn--selected {
+  background: var(--card);
+  color: var(--foreground);
+  box-shadow: var(--shadow-sm);
+}
+.header__view-toggle {
+  display: flex;
+  gap: 2px;
+  background: var(--muted);
+  border-radius: var(--radius);
+  padding: 3px;
+}
+
+/* New Job button */
+.header__new-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.45rem 1rem;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+.header__new-btn:hover {
+  opacity: 0.9;
+  box-shadow: var(--shadow-md);
+}
+
+/* Status tabs */
+.header__tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.header__tab {
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius);
+  font-size: 12.5px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--muted-foreground);
+  transition: var(--transition);
+}
+.header__tab:hover {
+  background: rgba(128,128,128,0.08);
+  color: var(--foreground);
+}
+.header__tab--active {
+  background: rgba(128,128,128,0.12);
+  color: var(--foreground);
+  box-shadow: var(--shadow-sm);
+}

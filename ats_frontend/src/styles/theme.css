@@ -1,0 +1,95 @@
+/* ============================================
+   LIGHT MODE (default)
+   ============================================ */
+:root {
+  --font-size: 15px;
+  --font-family-base: 'Space Grotesk', sans-serif;
+  --font-family-title: 'Fauna One', serif;
+
+  /* Backgrounds */
+  --background: #ebebed;
+  --foreground: #1c1c1e;
+  --card: #f7f8f9;
+  --card-foreground: #1c1c1e;
+  --popover: #fafbfc;
+  --popover-foreground: #1c1c1e;
+
+  /* Brand colors */
+  --primary: #2c2c2e;
+  --primary-foreground: #f7f8f9;
+  --secondary: #5c5c5e;
+  --secondary-foreground: #f7f8f9;
+
+  /* Muted & Accents */
+  --muted: #d8d9db;
+  --muted-foreground: #66666a;
+  --accent: #3c3c3e;
+  --accent-foreground: #f7f8f9;
+
+  /* Status colors */
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --soft-green: #dce8da;
+  --soft-red: #f4dcdc;
+  --soft-yellow: #f5f0dc;
+  --soft-blue: #dce4f4;
+
+  /* Borders & Inputs */
+  --border: rgba(0, 0, 0, 0.06);
+  --input-background: #fafbfc;
+  --switch-background: #8c8c8e;
+  --ring: #3c3c3e;
+
+  /* Sidebar */
+  --sidebar-bg: #0a0a0a;
+  --sidebar-foreground: rgba(255,255,255,0.85);
+  --sidebar-border: rgba(255,255,255,0.05);
+  --sidebar-active-bg: rgba(255,255,255,0.06);
+  --sidebar-hover-bg: rgba(255,255,255,0.03);
+  --sidebar-muted: rgba(255,255,255,0.45);
+
+  /* Misc */
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 24px rgba(0,0,0,0.12);
+  --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+.dark {
+  --background: #0d0d0d;
+  --foreground: #ececec;
+  --card: #161618;
+  --card-foreground: #ececec;
+  --popover: #1a1a1c;
+  --popover-foreground: #ececec;
+
+  --primary: #ececec;
+  --primary-foreground: #1c1c1e;
+  --secondary: #3a3a3c;
+  --secondary-foreground: #ececec;
+
+  --muted: #2a2a2c;
+  --muted-foreground: #8c8c8e;
+  --accent: #2a2a2c;
+  --accent-foreground: #ececec;
+
+  --border: rgba(255, 255, 255, 0.06);
+  --input-background: #1e1e20;
+  --switch-background: #5c5c5e;
+  --ring: #5c5c5e;
+
+  --soft-green: rgba(134, 186, 128, 0.15);
+  --soft-red: rgba(220, 80, 80, 0.15);
+  --soft-yellow: rgba(220, 190, 80, 0.15);
+  --soft-blue: rgba(80, 140, 220, 0.15);
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg: 0 12px 24px rgba(0,0,0,0.5);
+}

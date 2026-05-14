@@ -1,0 +1,91 @@
+/* src/features/candidates/components/CandidateCard.css */
+.candidate-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1),
+              box-shadow 0.25s ease,
+              border-color 0.2s ease;
+  box-shadow: var(--shadow-sm);
+  will-change: transform;
+  outline: none;
+}
+.candidate-card:hover {
+  transform: translateY(-2px) scale(1.008);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(128,128,128,0.15);
+}
+.candidate-card:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+.candidate-card--dragging {
+  opacity: 0.5;
+  transform: rotate(2deg);
+  box-shadow: var(--shadow-lg);
+}
+
+.candidate-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.candidate-card__info { flex: 1; }
+.candidate-card__id {
+  font-size: 10px;
+  color: var(--muted-foreground);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 3px;
+}
+.candidate-card__name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 2px;
+}
+.candidate-card__role {
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+.candidate-card__score {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 2px;
+}
+.score-excellent { color: #05d451; }
+.score-good      { color: #84cc16; }
+.score-average   { color: #f59e0b; }
+.score-poor      { color: #ef4444; }
+
+.candidate-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 0.75rem;
+}
+.candidate-card__skill {
+  padding: 3px 8px;
+  background: rgba(128,128,128,0.1);
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--muted-foreground);
+}
+
+.candidate-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.candidate-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--muted-foreground);
+}

@@ -1,0 +1,19 @@
+/* src/components/ui/Badge.css */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.badge--screening    { background: var(--muted); color: var(--foreground); }
+.badge--fitment      { background: var(--soft-blue); color: var(--foreground); }
+.badge--technical    { background: var(--soft-yellow); color: var(--foreground); }
+.badge--ptc          { background: var(--soft-yellow); color: var(--foreground); opacity: 0.85; }
+.badge--founders     { background: var(--soft-blue); color: var(--foreground); }
+.badge--selected     { background: var(--soft-green); color: var(--foreground); }
+.badge--rejected     { background: var(--soft-red); color: var(--foreground); }
+.badge--default      { background: var(--muted); color: var(--muted-foreground); }

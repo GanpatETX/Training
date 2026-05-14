@@ -1,0 +1,66 @@
+/* src/pages/CandidatesPage.css */
+.candidates-page {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.candidates-page__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.candidates-page__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.candidates-page__subtitle {
+    font-size: 13px;
+    color: var(--muted-foreground);
+}
+
+.candidates-page__search-wrap {
+    position: relative;
+}
+
+.candidates-page__search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted-foreground);
+    pointer-events: none;
+}
+
+.candidates-page__search {
+    padding: 0.45rem 0.75rem 0.45rem 2rem;
+    font-size: 13px;
+    background: var(--input-background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--foreground);
+    width: 250px;
+    outline: none;
+    transition: var(--transition);
+}
+
+.candidates-page__search:focus {
+    border-color: var(--ring);
+}
+
+.candidates-page__loading {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.candidates-page__error {
+    color: var(--destructive);
+    padding: 1rem;
+}

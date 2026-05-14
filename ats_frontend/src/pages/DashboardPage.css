@@ -1,0 +1,122 @@
+/* src/pages/DashboardPage.css */
+.dashboard {
+  padding: 1.5rem;
+  max-width: 1200px;
+}
+
+.dashboard__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.dashboard__header {
+  margin-bottom: 1.75rem;
+}
+
+.dashboard__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.dashboard__subtitle {
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .dashboard__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat-card {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.stat-card--blue {
+  border-left: 3px solid #60a5fa;
+}
+
+.stat-card--yellow {
+  border-left: 3px solid #fbbf24;
+}
+
+.stat-card--green {
+  border-left: 3px solid #4ade80;
+}
+
+.stat-card--purple {
+  border-left: 3px solid #a78bfa;
+}
+
+.stat-card__value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-card__label {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+
+.dashboard__section-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.dashboard__breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 700px;
+}
+
+.breakdown-item {
+  display: grid;
+  grid-template-columns: 180px 1fr 40px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.breakdown-item__label {
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.breakdown-item__bar-wrap {
+  height: 6px;
+  background: var(--muted);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.breakdown-item__bar {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+  min-width: 4px;
+}
+
+.breakdown-item__count {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+}

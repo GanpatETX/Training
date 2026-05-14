@@ -1,0 +1,15 @@
+/* src/components/ui/Spinner.css */
+.spinner {
+  border-radius: 50%;
+  border: 2px solid var(--muted);
+  border-top-color: var(--primary);
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+.spinner--sm { width: 16px; height: 16px; }
+.spinner--md { width: 24px; height: 24px; }
+.spinner--lg { width: 40px; height: 40px; }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

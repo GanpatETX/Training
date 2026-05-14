@@ -1,0 +1,133 @@
+/* src/features/candidates/components/CandidateDetailModal.css */
+.candidate-detail__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.candidate-detail__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  flex-shrink: 0;
+}
+
+.candidate-detail__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.candidate-detail__role {
+  font-size: 13px;
+  color: var(--muted-foreground);
+  margin-bottom: 2px;
+}
+
+.candidate-detail__id {
+  font-size: 11px;
+  color: var(--muted-foreground);
+  font-family: monospace;
+}
+
+.candidate-detail__score {
+  margin-left: auto;
+  text-align: center;
+}
+
+.candidate-detail__score-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.candidate-detail__score-label {
+  font-size: 11px;
+  color: var(--muted-foreground);
+  letter-spacing: 0.04em;
+}
+
+.candidate-detail__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.candidate-detail__info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.candidate-detail__info-item svg {
+  flex-shrink: 0;
+}
+
+.candidate-detail__section {
+  margin-bottom: 1.25rem;
+}
+
+.candidate-detail__section-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-foreground);
+  margin-bottom: 0.6rem;
+}
+
+.candidate-detail__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.candidate-detail__skill {
+  padding: 4px 12px;
+  background: var(--muted);
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--muted-foreground);
+}
+
+.candidate-detail__statuses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.candidate-detail__status-btn {
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 12px;
+  color: var(--muted-foreground);
+  background: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.candidate-detail__status-btn:hover {
+  background: var(--muted);
+  color: var(--foreground);
+}
+
+.candidate-detail__status-btn--active {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  border-color: var(--primary);
+}
