@@ -533,7 +533,7 @@ actor_roles (
 |`hiring_manager`|Own requisitions + pipelines only|
 |`ptc` (People & Talent Coordinator)|All candidates, offer letters|
 |`cos` (Chief of Staff)|All — read + approve|
-|`founder`|All — full access|
+|`founder & Admin`|All — full access|
 |`supporting_member`|Assigned candidates only|
 |`candidate`|Own profile only|
 |`referee`|Assigned feedback forms only|
