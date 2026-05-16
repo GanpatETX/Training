@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.form-builder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.form-field {
+  box-sizing: border-box;
+}
+
+.layout-12 {
+  width: 100%;
+}
+
+.layout-6 {
+  width: calc(50% - 8px);
+}
+
+.layout-4 {
+  width: calc(33.333% - 11px);
+}
+
+@media (max-width: 768px) {
+  .layout-6,
+  .layout-4 {
+    width: 100%;
+  }
+}
